@@ -1,0 +1,637 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100vh;
+	background: url('../images/bg_main.jpg') no-repeat center;
+	margin: auto;
+}
+i {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+table, table tr, table td {
+	border-spacing: 0;
+}
+
+img {
+	width: 100%;
+	float: left;
+}
+
+.center {
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	float: left;
+	overflow: auto;
+}
+.kf {
+	width: 310px;
+	position: absolute;
+	right: 20px;
+	bottom: 300px;
+	z-index: 4;
+	overflow: hidden;
+}
+.kf > a {
+	width: 100%;
+	padding: 10px;
+	border-radius: 8px 0 0 8px;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f8991d;
+	margin-bottom: 10px;
+	position: relative;
+	left: 79%;
+	transition: all 0.3s;
+}
+.kf > a:hover {
+	left: 0;
+}
+.kf > a > i {
+	width: 48px;
+	height: 48px;
+	float: left;
+	background: url('../images/cshk.webp') no-repeat center;
+	background-size: 100%;
+}
+.kf > a > i.son_02 {
+	background-image: url('../images/gmail.webp');
+}
+.kf > a > i.son_03 {
+	background-image: url('../images/dv388.png');
+}
+.kf > a > span {
+	width: 230px;
+	float: right;
+}
+.kf > a > span > i {
+	width: 100%;
+	float: left;
+	font-size: 18px;
+	line-height: 1em;
+	color: #49380d;
+	font-weight: 600;
+}
+.kf > a > span > i + i {
+	color: #fff;
+	margin-top: 8px;
+}
+.right {
+	width: 90px;
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	z-index: 4;
+}
+.right > a {
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	margin-top: 20px;
+	animation: at-ripple-blue 0.6s linear infinite;
+	border-radius: 50%;
+	overflow: hidden;
+}
+@keyframes at-ripple-blue {
+    0% {
+    box-shadow: 0 2px 3px rgba(248, 153, 29, 0.774), 0 0 0 0 rgba(234, 167, 29, 0.644), 0 0 0 3px rgba(227, 176, 29, 0.788), 0 0 0 5px rgba(213, 177, 61, 0.719);
+    }
+    100% {
+    box-shadow: 0 2px 3px rgba(206, 164, 61, 0.192), 0 0 0 3px rgba(239, 176, 61, 0.274), 0 0 0 5px hsla(202, 75%, 71%, 0.205), 0 0 0 10px rgba(248, 170, 61, 0.192);
+    }
+}
+.header {
+	width: 100%;
+	float: left;
+	background: #000;
+}
+.header > .sonContent {
+	width: 12.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header > .sonContent > .sonLeft {
+	width: 8.9rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header > .sonContent > .sonLeft > a {
+	width: 3.2rem;
+	float: left;
+}
+.header > .sonContent > .sonLeft > .nav {
+	width: 5.2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.header > .sonContent > .sonLeft > .nav > a {
+	margin: 0.1rem 0;
+}
+.header > .sonContent > .sonLeft > .nav > a + a {
+	margin-left: 0.32rem;
+}
+.header > .sonContent > .sonLeft > .nav > a > i {
+	width: 0.68rem;
+	height: 0.68rem;
+	display: block;
+	margin: auto;
+	background: url('../images/nav_icon_01.png') no-repeat center;
+	background-size: 100%;
+}
+.header > .sonContent > .sonLeft > .nav > a > i.son_02 {
+	background-image: url('../images/nav_icon_02.png');
+}
+.header > .sonContent > .sonLeft > .nav > a > i.son_03 {
+	background-image: url('../images/nav_icon_03.png');
+}
+.header > .sonContent > .sonLeft > .nav > a > i.son_04 {
+	background-image: url('../images/nav_icon_04.png');
+}
+.header > .sonContent > .sonLeft > .nav > a > span {
+	margin-top: 0.04rem;
+	font-size: 0.24rem;
+	line-height: 1em;
+	color: #f8991d;
+	display: block;
+}
+.header > .sonContent > .sonRight {
+	width: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header > .sonContent > .sonRight a {
+	width: 50%;
+	font-size: 0.24rem;
+	line-height: 0.4rem;
+	text-align: center;
+	border-radius: 0.2rem;
+	color: #fff;
+	background: #f8991d;
+}
+.header > .sonContent > .sonRight a + a {
+	margin-left: 0.28rem;
+	background: #f00;
+}
+
+.banner {
+	width: 11.46rem;
+	margin-top: 0.36rem;
+}
+.banner > a {
+	width: 100%;
+	float: left;
+}
+.banner > .sonList {
+	width: 100%;
+	float: left;
+	margin-top: 0.36rem;
+	display: flex;
+	justify-content: space-between;
+}
+.banner > .sonList > a {
+	width: 50%;
+	height: 2.05rem;
+	background: url('../images/bg_01.png') no-repeat center;
+	background-size: 100%;
+}
+.banner > .sonList > a + a {
+	margin-left: 0.76rem;
+}
+.banner > .sonList > a > i {
+	width: 0.74rem;
+	float: left;
+	margin: 0.1rem;
+	font-size: 0.4rem;
+	line-height: 0.74rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #fff;
+	color: #f89b21;
+	font-weight: 600;
+}
+.banner > .sonList > a > span {
+	width: 2rem;
+	float: right;
+	margin-right: 0.2rem;
+	margin-top: 0.46rem;
+	font-size: 0.36rem;
+	line-height: 1.3em;
+	color: #fdf942;
+}
+.content {
+	width: 90%;
+	max-width: 15.8rem;
+}
+.content > .sonLab {
+	width: 100%;
+	float: left;
+	margin-top: 1rem;
+}
+.content > .sonItem {
+	width: 100%;
+	float: left;
+	margin-top: 0.4rem;
+	padding: 0 0.34rem;
+	border: solid 0.08rem #f8991d;
+	border-radius: 0.3rem;
+}
+.content > .sonItem > a {
+	float: left;
+	margin-top: 0.4rem;
+}
+.content > .sonItem > a.son_01 {
+	width: 12.74rem;
+}
+.content > .sonItem > a.son_02 {
+	width: 5.45rem;
+}
+.content > .sonItem > a.son_03 {
+	width: 2.11rem;
+}
+.content > .sonItem > a.son_04 {
+	width: 2.48rem;
+}
+.content > .sonItem > a.son_05 {
+	width: 8.46rem;
+}
+.content > .sonItem > a.son_06 {
+	width: 4.17rem;
+}
+.content > .sonItem > a.son_07 {
+	width: 12.77rem;
+}
+.content > .sonItem > a.son_08 {
+	width: 3.39rem;
+}
+.content > .sonItem > a.son_09 {
+	width: 9.57rem;
+}
+.content > .sonItem > a.son_10 {
+	width: 14.57rem;
+}
+.content > .sonItem > a.son_11 {
+	width: 12.64rem;
+}
+.content > .sonItem > a.son_12 {
+	width: 8.21rem;
+}
+.content > .sonItem > .sonText {
+	width: 100%;
+	float: left;
+	margin-top: 0.32rem;
+}
+.content > .sonItem > .sonText > i, .content > .sonItem > .sonText > span {
+	float: left;
+	font-size: 0.3rem;
+	line-height: 1.5em;
+	color: #fff;
+}
+.content > .sonItem > .sonText > i {
+	color: #f8991d;
+}
+.content > .sonItem > table {
+	width: calc(100% - 0.4rem);
+	float: left;
+	margin-top: 0.4rem;
+	margin-left: 0.2rem;
+	border: solid 0.04rem #f8991d;
+	border-top: 0;
+	border-left: 0;
+}
+.content > .sonItem > table td {
+	border: solid 0.04rem #f8991d;
+	border-right: 0;
+	border-bottom: 0;
+	font-weight: 600;
+	padding: 0.08rem 0;
+	line-height: 0.6rem;
+}
+.content > .sonItem > table thead td {
+	font-size: 0.48rem;
+	color: #fff;
+	text-align: center;
+	background: linear-gradient(180deg, rgb(247, 207, 155) 0%, rgb(179, 104, 7) 100%);
+}
+.content > .sonItem > table tbody td {
+	font-size: 0.36rem;
+	color: #000;
+	text-align: center;
+	background: #d9d8d8;
+}
+.minContent {
+	width: 90%;
+	max-width: 15.8rem;
+}
+.minContent > a {
+	margin-top: 0.6rem;
+}
+.minContent > a.son_01 {
+	width: 9.57rem;
+}
+.minContent > a.son_02 {
+	width: 14.57rem;
+}
+.minContent > a.son_03 {
+	width: 12.64rem;
+}
+.minContent > a.son_04 {
+	width: 8.21rem;
+}
+.minContent > .sonMoney {
+	width: 100%;
+	float: left;
+	margin-top: 1rem;
+	position: relative;
+}
+.minContent > .sonMoney > i {
+	width: 14.92rem;
+	height: 0.78rem;
+	position: absolute;
+	top: -0.36rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url('../images/bg_money.png')no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonMoney > span {
+	width: 100%;
+	float: left;
+	padding: 0.6rem 0.3rem;
+	background: #0e0e0d;
+	font-size: 0.4rem;
+	line-height: 1.5em;
+	color: #fff;
+	border-radius: 0.3rem;
+}
+.minContent > .sonRing {
+	width: 100%;
+	float: left;
+	padding: 0.3rem;
+	margin-top: 0.8rem;
+	border: solid 0.04rem #ff9600;
+	border-radius: 0.9rem;
+}
+.minContent > .sonRing > a {
+	width: 100%;
+	float: left;
+	border: solid 0.04rem #ff9600;
+	border-radius: 0.65rem;
+	padding: 0.4rem;
+	font-size: 0.38rem;
+	line-height: 0.5rem;
+	color: #fff;
+	text-align: center;
+	background: #0e0e0d;
+}
+.minContent > .sonList {
+	width: 100%;
+	float: left;
+}
+.minContent > .sonList > .sonItem {
+	width: 100%;
+	height: 6.1rem;
+	float: left;
+	margin-top: 0.6rem;
+	position: relative;
+}
+.minContent > .sonList > .sonItem > .sonLeft {
+	width: 4.3rem;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('../images/bg_02.png')no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonList > .sonItem > .sonLeft > i {
+	width: 0.88rem;
+	height: 0.88rem;
+	float: left;
+	background: url('../images/icon_01.png') no-repeat center;
+	background-size: 100%;
+	margin-top: 0.9rem;
+	margin-left: 1.7rem;
+}
+.minContent > .sonList > .sonItem > .sonLeft > i.son_02 {
+	background-image: url('../images/icon_02.png');
+}
+.minContent > .sonList > .sonItem > .sonLeft > i.son_03 {
+	background-image: url('../images/icon_03.png');
+}
+.minContent > .sonList > .sonItem > .sonLeft > p {
+	width: 100%;
+	float: left;
+	margin-top: 1.32rem;
+	font-size: 0.38rem;
+	line-height: 1.5em;
+	color: #f8991d;
+	text-align: center;
+}
+.minContent > .sonList > .sonItem > .sonLeft > span {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 0.38rem;
+	line-height: 0.7rem;
+	color: #fff;
+	text-align: center;
+}
+.minContent > .sonList > .sonItem > p {
+	width: calc(100% - 3.9rem);
+	height: 3.95rem;
+	float: right;
+	padding: 0.28rem 0.68rem;
+	margin-top: 1.2rem;
+	border: solid 0.04rem #f8991d;
+	border-radius: 0.4rem;
+	background: #0e0e0d;
+	display: flex;
+	align-items: center;
+}
+.minContent > .sonList > .sonItem > p > span {
+	width: 100%;
+	font-size: 0.38rem;
+	line-height: 1.34em;
+	color: #fff;
+}
+.minContent > .sonGroup {
+	width: 100%;
+	float: left;
+}
+.minContent > .sonGroup > .sonItem {
+	width: calc(33.3% - 0.28rem);
+	height: 5.6rem;
+	float: left;
+	margin-right: 0.4rem;
+	margin-top: 0.5rem;
+	background: url('../images/bg_03.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonGroup > .sonItem:nth-child(3n) {
+	margin-right: 0;
+	float: right;
+}
+.minContent > .sonGroup > .sonItem > i {
+	width: 1.08rem;
+	height: 1.08rem;
+	margin-top: 0.4rem;
+	background: url('../images/icon_06.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonGroup > .sonItem > i.son_02 {
+	background-image: url('../images/icon_07.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_03 {
+	background-image: url('../images/icon_08.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_04 {
+	background-image: url('../images/icon_09.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_05 {
+	background-image: url('../images/icon_10.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_06 {
+	background-image: url('../images/icon_11.png');
+}
+.minContent > .sonGroup > .sonItem > span {
+	width: 100%;
+	float: left;
+	font-size: 0.24rem;
+	line-height: 1em;
+	color: #f8991d;
+	text-align: center;
+}
+.minContent > .sonGroup > .sonItem > span + span {
+	padding: 0 0.7rem;
+	margin-top: 0.6rem;
+	text-align: left;
+	color: #000;
+	font-size: 0.18rem;
+	line-height: 1.5em;
+}
+.minContent > .sonInfo {
+	width: 100%;
+	float: left;
+	margin-top: 0.8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.minContent > .sonInfo > .sonLeft {
+	width: 10.11rem;
+	height: 6.02rem;
+	background: url('../images/bg_05.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem {
+	width: 100%;
+	float: left;
+	padding: 0.42rem 0 0.42rem 1.72rem;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem + .sonItem {
+	margin-top: -0.04rem;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > i {
+	width: 0.7rem;
+	height: 0.7rem;
+	float: left;
+	border: solid 0.08rem #343434;
+	border-radius: 50%;
+	background: url('../images/icon_12.png') no-repeat center #000;
+	background-size: 100%;
+	margin-right: 0.2rem;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > i.son_02 {
+	background-image: url('../images/icon_16.png');
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > i.son_03 {
+	background-image: url('../images/icon_13.png');
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > span {
+	float: left;
+	font-size: 0.4rem;
+	line-height: 0.7rem;
+	color: #f8991d;
+	font-style: oblique;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > span + span {
+	color: #fff;
+}
+.minContent > .sonInfo > .sonRight {
+	width: 4.84rem;
+	height: 5.5rem;
+	background: url('../images/bg_04.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > a {
+	width: 0.72rem;
+	float: left;
+	margin-left: 0.3rem;
+}
+.minContent > .sonInfo > .sonLeft > .sonItem > a + a {
+	width: 0.9rem;
+}
+.minContent > .sonSlogan {
+	width: 100%;
+	float: left;
+	margin-top: 0.6rem;
+	font-size: 0.54rem;
+	line-height: 1em;
+	color: #fff;
+	text-align: center;
+}
+.minContent > .sonSlogan1 {
+	font-size: 0.4rem;
+	color: #e1a000;
+	margin-top: 0.2rem;
+}
+.footer {
+	width: 100%;
+	height: 2.68rem;
+	float: left;
+	margin-top: 0.7rem;
+	background: url('../images/bg_06.png') no-repeat center #1b1a1a;
+	background-size: 14.78rem;
+}
+.power {
+	width: 100%;
+	float: left;
+	font-size: 0.16rem;
+	line-height: 0.54rem;
+	color: #aaa;
+	text-align: center;
+	background: #161616;
+}
+.bigLogo {
+	width: 3.41rem;
+	margin-top: 0.46rem;
+}
+
+
+
+
+
+
+
+

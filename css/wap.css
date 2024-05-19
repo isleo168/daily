@@ -1,0 +1,580 @@
+* {padding: 0; margin: 0; box-sizing: border-box;touch-action: pan-y;-webkit-tap-highlight-color:transparent;-webkit-overflow-scrolling:touch;-ms-overflow-style: none;overflow: -moz-scrollbars-none;}
+*::-webkit-scrollbar {width: 0!important;}
+.bg {font-family: 'Roboto', sans-serif;
+	width: 100%;
+	max-width: 750px;
+	height: 100vh;
+	background: url('../images/wap_bg.png') no-repeat center top;
+	background-size: 100%;
+	position: relative;
+	margin: auto;}
+i {
+	font-style: normal;
+}
+a {
+	text-decoration: none;
+}
+table, table tr, table td {
+	border-spacing: 0;
+}
+img {
+	width: 100%;
+	float: left;
+}
+
+.center {
+	float: left;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.main {
+	width: 100%;
+	height: 100vh;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header {
+	width: 100%;
+	height: 1.2rem;
+	position: absolute;
+	background: #000;
+	display: flex;
+	align-items: center;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.header > a {
+	width: 5.36rem;
+}
+.right {
+	width: 1.5rem;
+	position: absolute;
+	right: 0;
+	bottom: 10%;
+	z-index: 4;
+}
+.right > a {
+	width: 80%;
+	float: left;
+	margin-left: 15%;
+	margin-top: 0.3rem;
+	animation: at-ripple-blue 0.6s linear infinite;
+	border-radius: 50%;
+	overflow: hidden;
+}
+@keyframes at-ripple-blue {
+    0% {
+    box-shadow: 0 2px 3px rgba(248, 153, 29, 0.774), 0 0 0 0 rgba(234, 167, 29, 0.644), 0 0 0 3px rgba(227, 176, 29, 0.788), 0 0 0 5px rgba(213, 177, 61, 0.719);
+    }
+    100% {
+    box-shadow: 0 2px 3px rgba(206, 164, 61, 0.192), 0 0 0 3px rgba(239, 176, 61, 0.274), 0 0 0 5px hsla(202, 75%, 71%, 0.205), 0 0 0 10px rgba(248, 170, 61, 0.192);
+    }
+}
+.content {
+	width: 100%;
+	height: 100vh;
+	float: left;
+	padding: 1.2rem 0.24rem 0 0.24rem;
+	overflow: auto;
+	position: relative;
+}
+
+.banner {
+	width: 100%;
+	float: left;
+	margin-top: 0.2rem;
+}
+.banner > a {
+	width: 100%;
+	float: left;
+}
+.banner > .sonList {
+	width: 100%;
+	float: left;
+	margin-top: 0.24rem;
+	display: flex;
+	justify-content: space-between;
+}
+.banner > .sonList > a {
+	width: 2.03rem;
+	height: 1.26rem;
+	background: url('../images/wap_01.png') no-repeat center;
+	background-size: 100%;
+}
+.banner > .sonList > a + a {
+	margin-left: 0.28rem;
+}
+.banner > .sonList > a > i {
+	width: 0.5rem;
+	float: left;
+	margin: 0.16rem 0 0.16rem 0.16rem;
+	font-size: 0.4rem;
+	line-height: 0.5rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #fff;
+	color: #f89b21;
+	font-weight: 600;
+}
+.banner > .sonList > a > span {
+	width: 1.2rem;
+	float: right;
+	margin-right: 0.1rem;
+	margin-top: 0.3rem;
+	font-size: 0.22rem;
+	line-height: 1.3em;
+	color: #fdf942;
+}
+
+.nav {
+	width: 100%;
+	float: left;
+	margin-top: 0.6rem;
+}
+.nav > .sonLogin {
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+.nav > .sonLogin > a {
+	width: 3.2rem;
+	font-size: 0.36rem;
+	line-height: 0.54rem;
+	text-align: center;
+	border-radius: 0.2rem;
+	color: #fff;
+	background: #f8991d;
+}
+.nav > .sonLogin > a + a {
+	background: #f00;
+}
+.nav > .sonList {
+	width: 100%;
+	float: left;
+	margin-top: 0.24rem;
+	display: flex;
+	justify-content: space-between;
+}
+.nav > .sonList > a {
+	width: 1.56rem;
+	height: 1.45rem;
+	background: url('../images/wap_02.png')no-repeat center;
+	background-size: 100%;
+	position: relative;
+}
+.nav > .sonList > a + a {
+	margin-left: 0.3rem;
+}
+.nav > .sonList > a > i {
+	width: 0.72rem;
+	height: 0.72rem;
+	display: block;
+	margin: auto;
+	margin-top: 0.2rem;
+	background: url('../images/nav_icon_01.png') no-repeat center;
+	background-size: 100%;
+}
+.nav > .sonList > a > i.son_02 {
+	background-image: url('../images/nav_icon_02.png');
+}
+.nav > .sonList > a > i.son_03 {
+	background-image: url('../images/nav_icon_03.png');
+}
+.nav > .sonList > a > i.son_04 {
+	background-image: url('../images/nav_icon_04.png');
+}
+.nav > .sonList > a > span {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 0.24rem;
+	line-height: 0.4rem;
+	color: #f8991d;
+	text-align: center;
+	font-weight: 600;
+}
+.nav > .sonList > a > span.sonMini {
+	font-size: 0.2rem;
+}
+
+.year {
+	width: 100%;
+	float: left;
+	margin-top: 0.4rem;
+}
+
+.mainContent {
+	width: 100%;
+	float: left;
+	margin-top: 0.4rem;
+	padding: 0 0.16rem;
+	border: solid 0.08rem #f8991d;
+	border-radius: 0.3rem;
+}
+.mainContent > a {
+	float: left;
+	margin-top: 0.2rem;
+}
+.mainContent > a.son_01 {
+	width: 5.8rem;
+}
+.mainContent > a.son_02 {
+	width: 2.5rem;
+}
+.mainContent > a.son_03 {
+	width: 1rem;
+}
+.mainContent > a.son_04 {
+	width: 1.2rem;
+}
+.mainContent > a.son_05 {
+	width: 3.86rem;
+}
+.mainContent > a.son_06 {
+	width: 1.92rem;
+}
+.mainContent > a.son_07 {
+	width: 5.8rem;
+}
+.mainContent > a.son_08 {
+	width: 1.6rem;
+}
+.mainContent > .sonText {
+	width: 100%;
+	float: left;
+	margin-top: 0.16rem;
+}
+.mainContent > .sonText > i, .mainContent > .sonText > span {
+	float: left;
+	font-size: 0.24rem;
+	line-height: 1.5em;
+	color: #fff;
+}
+.mainContent > .sonText > i {
+	color: #f8991d;
+}
+.mainContent > table {
+	width: calc(100% - 0.4rem);
+	float: left;
+	margin-top: 0.4rem;
+	margin-left: 0.2rem;
+	border: solid 0.04rem #f8991d;
+	border-top: 0;
+	border-left: 0;
+}
+.mainContent > table td {
+	border: solid 0.04rem #f8991d;
+	border-right: 0;
+	border-bottom: 0;
+	font-weight: 600;
+	padding: 0.08rem 0;
+	line-height: 0.3rem;
+}
+.mainContent > table thead td {
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+	background: linear-gradient(180deg, rgb(247, 207, 155) 0%, rgb(179, 104, 7) 100%);
+}
+.mainContent > table tbody td {
+	font-size: 0.2rem;
+	color: #000;
+	text-align: center;
+	background: #d9d8d8;
+}
+
+.minContent {
+	width: 100%;
+	float: left;
+	margin-top: 0.2rem;
+}
+.minContent > a {
+	margin-top: 0.2rem;
+}
+.minContent > a.son_01 {
+	width: 5.8rem;
+}
+.minContent > a.son_001 {
+	width: 5.8rem;
+}
+.minContent > .sonInfo {
+	width: 100%;
+	height: 4.2rem;
+	float: left;
+	margin-top: 0.2rem;
+	background: url('../images/bg_05.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonInfo > .sonItem {
+	width: 100%;
+	float: left;
+	padding: 0.24rem 0 0.24rem 1.2rem;
+}
+.minContent > .sonInfo > .sonItem + .sonItem {
+	margin-top: 0.04rem;
+}
+.minContent > .sonInfo > .sonItem > i {
+	width: 0.54rem;
+	height: 0.54rem;
+	float: left;
+	border: solid 0.04rem #343434;
+	border-radius: 50%;
+	background: url('../images/icon_12.png') no-repeat center #000;
+	background-size: 100%;
+}
+.minContent > .sonInfo > .sonItem > i.son_02 {
+	background-image: url('../images/icon_16.png');
+}
+.minContent > .sonInfo > .sonItem > i.son_03 {
+	background-image: url('../images/icon_13.png');
+}
+.minContent > .sonInfo > .sonItem > span {
+	float: left;
+	font-size: 0.28rem;
+	line-height: 0.54rem;
+	color: #f8991d;
+	font-style: oblique;
+}
+.minContent > .sonInfo > .sonItem > span + span {
+	color: #fff;
+}
+.minContent > .sonInfo > .lastItem {
+	padding-left: 0.8rem;
+}
+.minContent > .sonInfo > .sonItem > a {
+	width: 0.48rem;
+	float: left;
+	margin-left: 0.2rem;
+}
+.minContent > .sonInfo > .sonItem > a + a {
+	width: 0.66rem;
+}
+
+.minContent > .sonSlogan {
+	width: 100%;
+	float: left;
+	margin-top: 0.4rem;
+	font-size: 0.24rem;
+	line-height: 1em;
+	color: #fff;
+	text-align: center;
+}
+.minContent > .sonSlogan1 {
+	font-size: 0.32rem;
+	color: #e1a000;
+	margin-top: 0.2rem;
+}
+.minContent > .bigLogo {
+	width: 3.5rem;
+	margin-top: 0.24rem;
+}
+.minContent > .sonMoney {
+	width: 100%;
+	float: left;
+	margin-top: 0.6rem;
+	position: relative;
+}
+.minContent > .sonMoney > i {
+	width: 90%;
+	height: 0.78rem;
+	position: absolute;
+	top: -0.36rem;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url('../images/bg_money.png')no-repeat center;
+	background-size: 180%;
+}
+.minContent > .sonMoney > span {
+	width: 100%;
+	float: left;
+	padding: 0.4rem 0.3rem;
+	background: #0e0e0d;
+	font-size: 0.24rem;
+	line-height: 1.5em;
+	color: #fff;
+	border-radius: 0.2rem;
+}
+.minContent > a.son_002 {
+	width: 5.6rem;
+	margin-top: 0.3rem;
+}
+.minContent > .sonRing {
+	width: 100%;
+	height: 0.9rem;
+	float: left;
+	padding: 0.1rem;
+	margin-top: 0.28rem;
+	border: solid 0.02rem #ff9600;
+	border-radius: 0.45rem;
+}
+.minContent > .sonRing > a {
+	width: 200%;
+	float: left;
+	border: solid 0.02rem #ff9600;
+	border-radius: 0.6rem;
+	padding: 0.2rem;
+	font-size: 0.4rem;
+	line-height: 2em;
+	color: #fff;
+	text-align: center;
+	background: #0e0e0d;
+	transform: scale(0.5);
+    margin-left: -50%;
+    margin-top: -0.32rem;
+}
+.minContent > .sonList {
+	width: 100%;
+	float: left;
+}
+.minContent > .sonList > .sonItem {
+	width: 100%;
+	float: left;
+	margin-top: 0.6rem;
+	position: relative;
+}
+.minContent > .sonList > .sonItem > .sonLeft {
+	width: 4.3rem;
+	height: 6.1rem;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: url('../images/bg_02.png')no-repeat center;
+	background-size: 100%;
+	transform: scale(0.5) translate(-50%, -100%);
+}
+.minContent > .sonList > .sonItem > .sonLeft > i {
+	width: 0.88rem;
+	height: 0.88rem;
+	float: left;
+	background: url('../images/icon_01.png') no-repeat center;
+	background-size: 100%;
+	margin-top: 0.9rem;
+	margin-left: 1.7rem;
+}
+.minContent > .sonList > .sonItem > .sonLeft > i.son_02 {
+	background-image: url('../images/icon_02.png');
+}
+.minContent > .sonList > .sonItem > .sonLeft > i.son_03 {
+	background-image: url('../images/icon_03.png');
+}
+.minContent > .sonList > .sonItem > .sonLeft > p {
+	width: 100%;
+	float: left;
+	margin-top: 1.32rem;
+	font-size: 0.38rem;
+	line-height: 1.5em;
+	color: #f8991d;
+	text-align: center;
+}
+.minContent > .sonList > .sonItem > .sonLeft > span {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 0.38rem;
+	line-height: 0.7rem;
+	color: #fff;
+	text-align: center;
+}
+.minContent > .sonList > .sonItem > p {
+	width: calc(100% - 2rem);
+	min-height: 3.4rem;
+	float: right;
+	padding: 0.2rem;
+	border: solid 0.04rem #f8991d;
+	border-radius: 0.2rem;
+	background: #0e0e0d;
+	display: flex;
+	align-items: center;
+}
+.minContent > .sonList > .sonItem > p > span {
+	width: 100%;
+	font-size: 0.24rem;
+	line-height: 1.5em;
+	color: #fff;
+}
+.minContent > a.son_003 {
+	width: 4rem;
+	margin-top: 0.4rem;
+}
+.minContent > .sonGroup {
+	width: 100%;
+	float: left;
+}
+.minContent > .sonGroup > .sonItem {
+	width: 70%;
+	height: 5.6rem;
+	float: left;
+	margin-top: 0.4rem;
+	background: url('../images/bg_03.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonGroup > .sonItem > i {
+	width: 1.08rem;
+	height: 1.08rem;
+	margin-top: 0.4rem;
+	background: url('../images/icon_06.png') no-repeat center;
+	background-size: 100%;
+}
+.minContent > .sonGroup > .sonItem > i.son_02 {
+	background-image: url('../images/icon_07.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_03 {
+	background-image: url('../images/icon_08.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_04 {
+	background-image: url('../images/icon_09.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_05 {
+	background-image: url('../images/icon_10.png');
+}
+.minContent > .sonGroup > .sonItem > i.son_06 {
+	background-image: url('../images/icon_11.png');
+}
+.minContent > .sonGroup > .sonItem > span {
+	width: 100%;
+	float: left;
+	font-size: 0.24rem;
+	line-height: 1em;
+	color: #f8991d;
+	text-align: center;
+}
+.minContent > .sonGroup > .sonItem > span + span {
+	padding: 0 0.7rem;
+	margin-top: 0.6rem;
+	text-align: left;
+	color: #000;
+	font-size: 0.18rem;
+	line-height: 1.5em;
+}
+
+.footer {
+	width: 100%;
+	height: 1.3rem;
+	float: left;
+	margin-top: 0.4rem;
+	background: url('../images/bg_06.png') no-repeat center #1b1a1a;
+	background-size: 7rem;
+}
+.power {
+	width: 100%;
+	float: left;
+	font-size: 0.2rem;
+	line-height: 0.54rem;
+	color: #aaa;
+	text-align: center;
+	background: #161616;
+}
+.pageFooter {
+	width: calc(100% + 0.48rem);
+	float: left;
+	margin-left: -0.24rem;
+}
